@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #fefefe;
+  background: #fdf8e9;
   color: #222;
 }
 
 header {
   background: #111;
-  color: #fff;
+  color: #02005c;
   padding: 1rem 2rem;
 }
 
@@ -21,7 +21,7 @@ nav {
 
 nav .logo {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 nav ul {
