@@ -13,7 +13,7 @@
       <div class="logo">SQB™</div>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/examples.html">Examples</a></li>
+        <li><a href="/index.html#examples">Examples</a></li>
         <li><a href="/index.html#contact">Contact</a></li>
       </ul>
     </nav>
@@ -41,7 +41,196 @@
       <li>Embedded enterprise bots tied to internal knowledge systems</li>
       <li>Multi-language deployments with structured language-layering under one logic shell</li>
     </ul>
+    
+<h2 id="examples">SQB™ Use Case Examples</h2>
+<p><strong>Structured Query Bot (SQB)</strong> governs how bots behave, what sources they use, and how far they’re allowed to go. Below are real-world contrasts that show how SQB-controlled bots differ from open-ended AI bots in sensitive applications.</p>
 
+<h2>⚖️ Legal Intake Bot: SQB vs Non-SQB</h2>
+<table>
+  <tr>
+    <th>Category</th>
+    <th>✅ SQB Legal Intake Bot</th>
+    <th>❌ Non-SQB Legal Chatbot</th>
+  </tr>
+  <tr>
+    <td>Purpose</td>
+    <td>Structured pre-consultation for a law firm</td>
+    <td>Answers random legal questions using AI</td>
+  </tr>
+  <tr>
+    <td>Response Logic</td>
+    <td>Only asks law firm–approved questions</td>
+    <td>May give advice it’s not authorized to provide</td>
+  </tr>
+  <tr>
+    <td>Source of Truth</td>
+    <td>Law firm documents, templates, and flows</td>
+    <td>Trained on public or internet data</td>
+  </tr>
+  <tr>
+    <td>AI Usage</td>
+    <td>Optional, scoped fallback only</td>
+    <td>Always active with no hard boundaries</td>
+  </tr>
+  <tr>
+    <td>Audit Trail</td>
+    <td>Every step is logged and verifiable</td>
+    <td>No way to prove where an answer came from</td>
+  </tr>
+  <tr>
+    <td>Compliance Ready</td>
+    <td>Aligned with attorney marketing rules</td>
+    <td>May violate UPL or advertising laws</td>
+  </tr>
+  <tr>
+    <td>User Trust</td>
+    <td>Clear disclaimers and consistent flow</td>
+    <td>Can be mistaken for legal advice</td>
+  </tr>
+</table>
+
+<blockquote>
+  <strong>✅ Example SQB Use:</strong><br>
+  “Please select the state you’re in.”<br>
+  “Have you already received a demand letter?”<br>
+  → “Would you like to speak with someone from our team?”<br>
+  → AI assist (if enabled) pulls only from uploaded firm guidance.
+</blockquote>
+
+<div class="non-sqb">
+<blockquote>
+  <strong>❌ Example Non-SQB Use:</strong><br>
+  User: “Do I have a case if my landlord changed the locks?”<br>
+  → Bot: “Yes, that may be considered an illegal eviction under local laws.”<br>
+  → No structure, disclaimers, or safeguards.
+</blockquote>
+</div>
+
+<hr>
+
+<h2>🏥 Medical Screening Bot: SQB vs Non-SQB</h2>
+<table>
+  <tr>
+    <th>Category</th>
+    <th>✅ SQB Medical Intake Bot</th>
+    <th>❌ Non-SQB Medical Chatbot</th>
+  </tr>
+  <tr>
+    <td>Purpose</td>
+    <td>Pre-screening and triage intake only</td>
+    <td>Answers symptom questions with AI guesses</td>
+  </tr>
+  <tr>
+    <td>Response Logic</td>
+    <td>Follows uploaded protocol</td>
+    <td>Responds freely based on model training</td>
+  </tr>
+  <tr>
+    <td>Source of Truth</td>
+    <td>Clinical triage or intake workflows</td>
+    <td>Unverified or public web sources</td>
+  </tr>
+  <tr>
+    <td>AI Usage</td>
+    <td>Only used to clarify or rephrase questions</td>
+    <td>Primary response engine</td>
+  </tr>
+  <tr>
+    <td>Audit Trail</td>
+    <td>Every prompt and branch is logged</td>
+    <td>No explanation of AI output</td>
+  </tr>
+  <tr>
+    <td>Compliance Ready</td>
+    <td>HIPAA-safe triage compliance</td>
+    <td>Potential medical risk or misguidance</td>
+  </tr>
+  <tr>
+    <td>User Trust</td>
+    <td>Stops at red flags and recommends escalation</td>
+    <td>Feels like diagnosis; user may act on it</td>
+  </tr>
+</table>
+
+<blockquote>
+  <strong>✅ Example SQB Use:</strong><br>
+  “Are you experiencing chest pain?”<br>
+  “How long has it lasted?”<br>
+  → “This may be an emergency. Please seek care now.”<br>
+  → No AI reasoning or diagnosis attempted.
+</blockquote>
+
+<div class="non-sqb">
+<blockquote>
+  <strong>❌ Example Non-SQB Use:</strong><br>
+  User: “I've had chest pain since this morning.”<br>
+  → Bot: “That could be stress or indigestion. Try resting and see if it improves.”<br>
+  → Makes a health assumption without authority.
+</blockquote>
+</div>
+
+<hr>
+
+<h2>💸 Lending Bot: SQB vs Non-SQB</h2>
+<table>
+  <tr>
+    <th>Category</th>
+    <th>✅ SQB Lending Bot</th>
+    <th>❌ Non-SQB Lending Chatbot</th>
+  </tr>
+  <tr>
+    <td>Purpose</td>
+    <td>Collects borrower data for review</td>
+    <td>Tries to answer loan qualification questions directly</td>
+  </tr>
+  <tr>
+    <td>Response Logic</td>
+    <td>Structured intake: credit, income, DTI, etc.</td>
+    <td>Responds based on guesswork</td>
+  </tr>
+  <tr>
+    <td>Source of Truth</td>
+    <td>Lender-approved eligibility logic</td>
+    <td>Trained general finance knowledge</td>
+  </tr>
+  <tr>
+    <td>AI Usage</td>
+    <td>Used only for definition/help text</td>
+    <td>Makes qualification predictions</td>
+  </tr>
+  <tr>
+    <td>Audit Trail</td>
+    <td>Fully logged intake session</td>
+    <td>No record of assumptions made</td>
+  </tr>
+  <tr>
+    <td>Compliance Ready</td>
+    <td>Aligned with lending compliance (TILA/UDAAP)</td>
+    <td>Risk of misleading or deceptive response</td>
+  </tr>
+  <tr>
+    <td>User Trust</td>
+    <td>No promises — clear intake path and disclaimers</td>
+    <td>Implied approvals or misleading confidence</td>
+  </tr>
+</table>
+
+<blockquote>
+  <strong>✅ Example SQB Use:</strong><br>
+  “What is your estimated credit score?”<br>
+  “What’s your monthly income?”<br>
+  → “Thanks. We’ll evaluate this and follow up via secure review.”<br>
+  → Optional human follow-up, no promises made.
+</blockquote>
+
+<div class="non-sqb">
+<blockquote>
+  <strong>❌ Example Non-SQB Use:</strong><br>
+  User: “Can I get a $500K loan with 720 credit?”<br>
+  → Bot: “Yes — you should qualify just fine with that credit score.”<br>
+  → Unverified assumption, no disclosures.
+</blockquote>
+</div>
     <h2>Commercial Use Of SQB™</h2>
     <p>SQB™ is a legally protected system specification. To license the framework, integrate it into your stack, or commercialize an SQB™-powered product please contact us.</p>
 
